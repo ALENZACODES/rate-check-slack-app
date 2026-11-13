@@ -9,7 +9,7 @@ features:
     always_online: false
   slash_commands:
     - command: /ratecheck
-      url: https://REPLACE-WITH-LIVE-HOST/slack/ratecheck
+      url: https://rate-check-slack-app.onrender.com/slack/ratecheck
       description: Latest Bank of Canada policy rate and USD/CAD
       usage_hint: "[rate | fx | help]"
       should_escape: false

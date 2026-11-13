@@ -3,9 +3,9 @@ services:
     name: rate-check-slack-app
     runtime: node
     plan: free
-    rootDir: app
-    buildCommand: "true"
-    startCommand: node server.js
+    region: ohio
+    buildCommand: echo no build needed
+    startCommand: node app/server.js
     healthCheckPath: /health
     envVars:
       - key: SLACK_SIGNING_SECRET

@@ -31,7 +31,9 @@ SLACK_SIGNING_SECRET=your_secret node server.js
 Sample test output from Nov 12, 2026: [test-output.txt](test-output.txt)
 
 ## Deploy
-`render.yaml` describes a free Render web service (root `app`, start `node server.js`, health check `/health`). Set `SLACK_SIGNING_SECRET` in the service settings, then put `https://<your-host>/slack/ratecheck` in the slash command URL in `manifest.yaml`.
+Live on a free Render web service: https://rate-check-slack-app.onrender.com/health returns `ok`.
+Slash command Request URL: `https://rate-check-slack-app.onrender.com/slack/ratecheck` (already in `manifest.yaml`).
+`render.yaml` has the same settings: start `node app/server.js`, health check `/health`, and `SLACK_SIGNING_SECRET` set in the service settings. The free instance sleeps when idle, so the first command after a quiet spell can take a moment.
 
 ## Install in Slack
 1. https://api.slack.com/apps, Create New App, From a manifest, paste `manifest.yaml`.
