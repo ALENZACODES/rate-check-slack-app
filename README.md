@@ -33,7 +33,7 @@ Sample test output from Nov 12, 2026: [test-output.txt](test-output.txt)
 ## Deploy
 Live on a free Render web service: https://rate-check-slack-app.onrender.com/health returns `ok`.
 Slash command Request URL: `https://rate-check-slack-app.onrender.com/slack/ratecheck` (already in `manifest.yaml`).
-`render.yaml` has the same settings: start `node app/server.js`, health check `/health`, and `SLACK_SIGNING_SECRET` set in the service settings. The free instance sleeps when idle, so the first command after a quiet spell can take a moment.
+`render.yaml` has the same settings: start `node app/server.js`, health check `/health`, and `SLACK_SIGNING_SECRET` set in the service settings. The free instance sleeps when idle and Slack waits only three seconds, so if the first command after a quiet spell times out, run it again.
 
 ## Install in Slack
 1. https://api.slack.com/apps, Create New App, From a manifest, paste `manifest.yaml`.
