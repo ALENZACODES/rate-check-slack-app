@@ -1,0 +1,23 @@
+display_information:
+  name: Rate Check
+  description: Posts the latest Bank of Canada policy rate and USD/CAD rate in the channel.
+  background_color: "#011f5b"
+  long_description: "Type /ratecheck in any channel and Rate Check posts the Bank of Canada target for the overnight rate and the daily USD/CAD rate, with the date of each number and the source. Use /ratecheck rate or /ratecheck fx for just one. Data comes from the Bank of Canada Valet API. Built by John Khan in Toronto, Ontario."
+features:
+  bot_user:
+    display_name: Rate Check
+    always_online: false
+  slash_commands:
+    - command: /ratecheck
+      url: https://REPLACE-WITH-LIVE-HOST/slack/ratecheck
+      description: Latest Bank of Canada policy rate and USD/CAD
+      usage_hint: "[rate | fx | help]"
+      should_escape: false
+oauth_config:
+  scopes:
+    bot:
+      - commands
+settings:
+  org_deploy_enabled: false
+  socket_mode_enabled: false
+  token_rotation_enabled: false

@@ -1,0 +1,18 @@
+/ratecheck (blank) -> 200 in_channel
+*Bank of Canada policy rate:* 2.50% (as of 2026-11-11)
+*USD/CAD:* 1.4255 Canadian dollars per US dollar (daily average, 2026-11-12)
+Source: Bank of Canada Valet API
+
+/ratecheck rate -> 200 in_channel
+*Bank of Canada policy rate:* 2.50% (as of 2026-11-11)
+Source: Bank of Canada Valet API
+
+/ratecheck fx -> 200 in_channel
+*USD/CAD:* 1.4255 Canadian dollars per US dollar (daily average, 2026-11-12)
+Source: Bank of Canada Valet API
+
+/ratecheck help -> 200 ephemeral
+Try `/ratecheck` for both numbers, `/ratecheck rate` for the policy rate, or `/ratecheck fx` for USD/CAD.
+
+unsigned request -> 401
+ALL TESTS PASSED

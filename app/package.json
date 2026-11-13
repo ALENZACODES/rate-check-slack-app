@@ -1,0 +1,10 @@
+{
+  "name": "rate-check-slack-app",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Slack slash command that posts the latest Bank of Canada policy rate and USD/CAD rate",
+  "main": "server.js",
+  "engines": { "node": ">=20" },
+  "scripts": { "start": "node server.js", "test": "node test.js" },
+  "author": "John Khan"
+}

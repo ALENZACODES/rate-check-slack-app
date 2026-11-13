@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: rate-check-slack-app
+    runtime: node
+    plan: free
+    rootDir: app
+    buildCommand: "true"
+    startCommand: node server.js
+    healthCheckPath: /health
+    envVars:
+      - key: SLACK_SIGNING_SECRET
+        sync: false
