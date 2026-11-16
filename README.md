@@ -42,3 +42,19 @@ Slash command Request URL: `https://rate-check-slack-app.onrender.com/slack/rate
 4. Install to the workspace and type `/ratecheck` in a channel.
 
 Built by John Khan, ALENZA CODES, Toronto, Ontario. Data: Bank of Canada.
+
+## Project structure
+
+```text
+rate-check-slack-app/
+├── app/              # Slash command service
+│   ├── package.json  # npm scripts and dependencies
+│   ├── server.js     # Slash command server
+│   └── test.js       # Local test with a signed request
+├── app-icon.png      # App icon
+├── cover.png         # Cover image
+├── manifest.yaml     # Slack app manifest
+├── README.md         # This file
+├── render.yaml       # Render deploy settings
+└── test-output.txt   # Recorded test run
+```
